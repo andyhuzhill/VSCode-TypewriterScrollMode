@@ -20,6 +20,7 @@
             "title": "Hello World"
         }]
     },
+    "icon": "https://www.github.com/andyhuzhill/vscode-typewriter-mode/typewriter.png",
     "scripts": {
         "vscode:prepublish": "tsc -p ./",
         "compile": "tsc -watch -p ./",
