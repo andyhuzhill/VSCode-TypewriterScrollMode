@@ -1,8 +1,8 @@
 {
-    "name": "typewriter-mode",
-    "displayName": "TypeWriter Mode",
+    "name": "typewriterscrollmode",
+    "displayName": "Typewriter Scroll Mode",
     "description": "Use vscode like a typewriter",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "publisher": "andyhuzhill",
     "engines": {
         "vscode": "^1.12.0"
@@ -11,16 +11,36 @@
         "Other"
     ],
     "activationEvents": [
-        "onCommand:extension.sayHello"
+        "onLanguage:markdown",
+        "onLanguage:plaintext"
     ],
     "main": "./out/src/extension",
     "contributes": {
-        "commands": [{
-            "command": "extension.sayHello",
-            "title": "Hello World"
-        }]
+        "configuration": {
+            "type": "object",
+            "title": "Typewriter scroll mode configuration",
+            "properties": {
+                "typewriterScrollMode.enable": {
+                    "type": "boolean",
+                    "default": true,
+                    "description": "turn on the typewriter scroll mode"
+                }
+            }
+        },
+        "commands": [
+            {
+                "command": "typewriterScrollMode.toggleEnabled",
+                "title": "Toggle typewriter scroll mode"
+            }
+        ],
+        "keybindings": [
+            {
+                "command": "typewriterScrollMode.toggleEnabled",
+                "key": "ctrl+shift+t"
+            }
+        ]
     },
-    "icon": "https://www.github.com/andyhuzhill/vscode-typewriter-mode/typewriter.png",
+    "icon": "images/typewriter.png",
     "scripts": {
         "vscode:prepublish": "tsc -p ./",
         "compile": "tsc -watch -p ./",
