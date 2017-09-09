@@ -2,7 +2,7 @@
     "name": "typewriterscrollmode",
     "displayName": "Typewriter Scroll Mode",
     "description": "Use vscode like a typewriter",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "publisher": "andyhuzhill",
     "engines": {
         "vscode": "^1.12.0"

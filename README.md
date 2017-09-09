@@ -6,7 +6,7 @@ Use typewriter's scroll mode in markdown files and plain text files. Inspired by
 
 Usage example:
 
-![Typewriter Scroll Mode](images/typewriter.gif)
+![Typewriter Scroll Mode](https://raw.githubusercontent.com/andyhuzhill/VSCode-TypewriterScrollMode/master/images/typewriter.gif)
 
 ## Extension Settings
 
@@ -20,7 +20,7 @@ the default shortcut key is `Ctrl+Shift+T`.
 You can modify this setting by searching `Toggle typewriter scroll mode` 
 in `Keyboard Shortcuts` setting page.
 
-![](images/shortcut.png)
+![](https://raw.githubusercontent.com/andyhuzhill/VSCode-TypewriterScrollMode/master/images/shortcut.png)
 
 ## Known Issues
 
